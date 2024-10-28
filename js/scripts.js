@@ -7,7 +7,24 @@ function setupPokemonListPage(){
     if(!grid) return;
 
     pokemonList.forEach(pokemon => {
-        let pokemonCard = createPokemonCard(pokemon);
+        const pokemonCard = document.createElement('div');
+        pokemonCard.className = 'pokemon-card';
+
+        const formattedId = formatPokemonId(pokemon.id);
+
+        const img = document.createElement('img');
+        img.src = `../images/${pokemon.id}.png`;
+        img.alt = pokemon.name;
+
+        const idElement = document.createElement('p');
+        idElement.textContent = formattedId;
+
+        const nameElement = document.createElement('p');
+        nameElement.textContent = pokemon.name;
+
+        pokemonCard.appendChild(img);
+        pokemonCard.appendChild(idElement);
+        pokemonCard.appendChild(nameElement);
 
         grid.appendChild(pokemonCard);
     });

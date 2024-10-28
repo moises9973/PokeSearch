@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer type="module" src="../js/scripts.js"></script>
+</head>
+<body data-page="pokemon-details">
+    <header>
+        <div>
+            <h3>Poké Search</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pokedex.html">Pokémon List</a></li>
+                <li><a href="#types">Types</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero no-index">
+        <div class="hero-content">
+            <h1>Look up your favorite Pokémon!</h1>
+            <p>From the original 151 Pokémon</p>
+            <form class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for a Pokémon">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+    
+    <div class="flex-container">
+        <div class="block"></div>
+        
+        <button id="previous-button"><</button>
+        
+        <section id="pokemon-details">
+            <span>Type 1</span>
+            <span>Type 2</span>
+            <div id="pokemon-image">
+                <img src="../images/1.png">
+            </div>
+            <p>#001</p>
+            <p>Bulbasaur</p>
+        </section>
+
+        <button id="next-button">></button>
+        <div class="block"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><span class="disclaimer">Disclaimer:</span> This website is for educational/fan purposes only. All images, names, and content related to Pokémon are the property of their respective owners, 
+            including Nintendo, Game Freak, and The Pokémon Company. No copyright infringement is intended. </p>
+    </footer>
+</body>
+</html>
